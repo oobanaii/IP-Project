@@ -20,7 +20,7 @@ In particular, as part of this section we recommend that you provide a list of U
 #### As user, I want to purchase the latest virtual reality games at a discounted price.
 #### As a user, I want to purchase discounted virtual reality games.
 #### As a site owner, I want to sell as many virtual reality games as possible.
-##As a customer, i want to find out more about the upcomming virtual reality games that are available.
+### As a customer, i want to find out more about the upcomming virtual reality games that are available.
 ####  
 
 
@@ -30,15 +30,25 @@ https://xd.adobe.com/view/7dbc17b8-050c-4bc0-9795-7ceaf0ac1e81-28ef/
 
 
 
-Features
-work in progress...
-Feature 
+## Features
+### Existing Features
 - Browse through the available VR games (Search Bar/filter)
 - Add games to shopping cart and then checkout (Check out page). 
 - Rewards & discounted page 
 - Contact Page 
 - Create an account & Login Page
+### Features Left to Implement
+- log in page and user profile
 
+## Technologies
+- HTML
+ - the project uses HTML to construct our website
+- CSS
+ - the project uses CSS to style the website in an aesthetic manner
+- Javascript
+ - the project uses Javascript to make the website interactive
+- JQuery
+ -the project uses JQuery to simplify DOM manipulation.
 ## Testing: work in progress...
 
 ## Credits
