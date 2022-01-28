@@ -383,3 +383,109 @@
         border-color: #FF00A0; 
     }
 }
+/*Css for html pages*/
+
+* {
+  /*Universal selector page layout*/
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+  /*Page Scroll smooth all*/
+html {
+	scroll-behavior: smooth;
+}
+
+  /*Font all merianda style*/
+body {
+	font-family: merienda;
+}
+
+
+/*Remove bullet points from navigation links*/
+ul, nav {
+	list-style: none;
+}
+
+/*colors inherit by parent for navigation links*/
+a {
+	text-decoration: none;
+	cursor: pointer;
+	color: inherit;
+}
+
+
+/* Header Section*/
+header {
+  /*Sticky bar header box*/
+	position: sticky;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	width: 100%;
+/*BlackPink navigation header layout border design*/
+/*Flexboxes for positioning the navigation links*/
+	display: -webkit-flex; /*Googlechrome*/
+	display: -moz-flex;/*mozilla firefox*/
+	display: -ms-flex; /*microsoft internet explorer*/
+	display: -o-flex; /*opera*/
+	display: flex; /* Display flebox a container that expands items to fill available free space or shrinks them to stop congestion*/
+	justify-content: space-between;
+	align-items: center;
+  background-color:Pink;
+	color:black;
+  padding: 30px 70px;
+  border-style: solid;
+  border-radius: 1px;
+  border-color: white;
+}
+
+
+/*BlackPink Title Uppercase*/
+header h2 {
+	text-transform: uppercase;
+}
+
+
+/*BlackPink navigation header link Design*/
+/*BlackPink navigation header design*/
+header nav li {
+	margin: 0 15px;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 0 15px;
+
+}
+
+/*BlackPink navigation header hover button design mouse hovering*/
+header nav li a {
+/*Delay of mouse hovering*/
+transition: all .3s ease 0s;
+color: #fff;
+}
+/*Delay of mouse hovering change to black*/
+header nav li a:hover {
+ color: black;
+}
+
+/*Media size change for larger devices for the header*/
+@media(max-width:1000px) {
+	header {
+		padding: 15px 50px;
+	}
+}
+
+/*Media size change for smaller devices for the header*/
+@media (max-width:700px) {
+	header {
+		flex-direction: column;
+	}
+	header h2 {
+		margin-bottom: 15px;
+
+	}
+	header nav li {
+		margin: 0 8px;
+	}
+}
