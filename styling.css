@@ -433,8 +433,8 @@ header {
 	display: flex; /* Display flebox a container that expands items to fill available free space or shrinks them to stop congestion*/
 	justify-content: space-between;
 	align-items: center;
-  background-color:Pink;
-	color:black;
+  background-color:#120458;
+	color:#FBF665;
   padding: 30px 70px;
   border-style: solid;
   border-radius: 1px;
