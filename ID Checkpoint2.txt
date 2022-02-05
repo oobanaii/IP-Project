@@ -1,0 +1,11 @@
+APIs we've tried out:
+From the ID document, we picked https://github.com/TonnyL/Awesome_APIs
+From there, we tried Amazon's API
+(https://developer.amazon.com/apps-and-games/services-and-apis)
+
+We also did research on Shopify's API
+(https://shopify.dev/api/admin) and Steam's API (https://steamcommunity.com/dev).
+
+Eventually, we created our own database that stores users' information. It is for their profile page and also the contact us page (in the scenario that people might want to ask us questions/ for help). It is created using restdb.io 
+https://archanegames-054a.restdb.io/home/
+
