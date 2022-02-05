@@ -1,85 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="styling.css" />
-        	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css" rel="stylesheet">
-        <link href="style.css" rel="stylesheet">
-        <title>Archane Games</title>
-        <link rel="Games" href="Games.html" />
-        <link rel="Cart" href="Cart.html" />
-        
 
-    </head>
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cyberpunk 2077 Slider</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
 
-    <header>
-		<h2><a href="#Home">Archane Games</a></h2>
-		<nav>
-			<ul>
-				<li>
-					<a href="#Home">Home</a>
-				</li>
-				<li>
-					<a href="#about">About</a>
-				</li>
-				<li>
-					<a href="Games.html">Games</a>
-				</li>
-				<li>
-					<a href="#contact">Contact</a>
-				</li>
-        <li>
-					<a href="Cart.html">Cart</a>
-				</li>
-			</ul>
-		</nav>
-	</header>
+<header>
+    <h2><a href="#Home" >Archane Games</a></h2>
+    <nav>
+        <ul>
+            <li>
+                <a href="#index.html">Home</a>
+            </li>
+            <li>
+                <a href="#cyberSlider">About</a>
+            </li>
+            <li>
+                <a href="#Contact">Contact</a>
+            </li>
+            <li>
+                <a href="#Login.html">Login</a>
+            </li>
+            </ul>>
+    </nav>
+</header>
 
-  	<section class="home-section" id="Home">
-		<div class="home-img"></div>
-		<h1 id="Title"><div class="typewriter">
-    <div class="typewriter-text">Archane Games</div>
-    </div></h1>
-    <a class="banner-btn" href="#about">About Us</a>
-	  </section>
+<body>
 
-    <section class="about-area" id="about">
-		<h3 class="section-title">About Archane Games</h3>
-		<ul class="about-content">
-			<li class="about-left"></li>
-			<li class="about-right">
-				<p>
-          Archane Games is a e-commerce platform that sells the latest Virtual Reality games. Find
-        </p> 
-			</li>
-		</ul>
-	  </section>
+    <main>
     
+        <section class="home-section" id="Home">
+        <div id="cyberSlider" class="cyber-slider">
+            <ul class="cyber-slider__wrapper">
 
-  	<section class="contact-area" id="contact">
-		<h3 class="section-title">Contact us</h3>
-      <form>
-      <label for="name">Name:</label>
-      <input type="text" placeholder = "Type your Name" id="name" required>
+                <li data-slideid="1" class="cyber-slider__slide active ">
+                    <span class="cyber-slider__imgwrap">
+                        <img class="slide-image" src="./img/slides/slide-1.jpg" alt="Slide 1">
+                        <span class="glitch-area">
 
-      <label for="email">Email:</label>
-      <input type="text" placeholder = "Type your Email" id="name" required>
+                        </span>
+                    </span>
 
-      <label for="Birth">Date of Birth: </label>
-      <input type="date" id="Birth">
-      <br>
-      <br>
-      <p1>Please type your message below :</p1>
-      <br>
-      <br>
-      <textarea id="comment" name="comment" rows="10" cols="100" required>Type your message here :)
-      </textarea>
-      <br><br>
-      <button>Submit</button>
-      <br><br>
-      </form>
-        <script src="javascript.js"></script>
-    </body>
+                    <div class="cyber-slider__content">
+                        <!-- class glitching -->
+                        <div class="cyber-slider__slidetext">
+                            <h3 class="heading-lg">Archane Games</h3>
+                            <p>Enter the massive open world of Night City, a place that sets new standards in terms of
+                                visuals, complexity and depth.</p>
+
+                                
+
+
+
+                        </div>
+                    </div>
+                </li>
+
+                <li data-slideid="2" class="cyber-slider__slide ">
+                    <span class="cyber-slider__imgwrap">
+                        <img class="slide-image" src="./img/slides/slide-2.jpg" alt="Slide 2">
+                        <span class="glitch-area">
+
+                        </span>
+                    </span>
+
+                    <div class="cyber-slider__content">
+                        <!-- class glitching -->
+                        <div class="cyber-slider__slidetext">
+                            <h3 class="heading-lg">Slide 2</h3>
+                            <p>Enter the massive open world of Night City, a place that sets new standards in terms of
+                                visuals, complexity and depth.</p>
+                        </div>
+                    </div>
+                </li>
+
+                <li data-slideid="3" class="cyber-slider__slide ">
+                    <span class="cyber-slider__imgwrap">
+                        <img class="slide-image" src="./img/slides/slide-3.jpg" alt="Slide 3">
+                        <span class="glitch-area">
+
+                        </span>
+                    </span>
+
+                    <div class="cyber-slider__content">
+                        <!-- class glitching -->
+                        <div class="cyber-slider__slidetext">
+                            <h3 class="heading-lg">Slide 3</h3>
+                            <p>Enter the massive open world of Night City, a place that sets new standards in terms of
+                                visuals, complexity and depth.</p>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+            <ul class="cyber-slider__controls">
+                <li data-slide="1" class="current"><a href="#"><d>Home</d><span class="sr-only">Slide 1</span></a></li>
+                <li data-slide="2"><a href="#"><d>Games</d><span class="sr-only">Slide 2</span></a></li>
+                <li data-slide="3"><a href="#"><d>Cart</d><span class="sr-only">Slide 3</span></a></li>
+            </ul>
+        </div>
+    </section>
+
+	<section class="about-area" id="about">
+		<h3 class="section-title">TOP 10 BEST VR GAMES 2021</h3>
+		<ul class="about-content">
+			<li class="about-left"><iframe width="560" height="315" src="https://www.youtube.com/embed/XE366PraX3I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+			<li class="about-right">
+   
+    </li>
+</ul>
+</section>
+
+<footer>
+	<p>All Right Reserved by Josephine & Angela Wong</p>
+	</footer>
+    </main>
+    <script src="./js/scripts.js"></script>
+</body>
+
 </html>
