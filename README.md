@@ -69,5 +69,5 @@ https://store.steampowered.com/app/546560/HalfLife_Alyx/
 
 ### Acknowledgements
 We received inspiration for this project from:
-Website : https://www.cyberpunk.net/sg/en/
-Glitch Effect : https://www.youtube.com/watch?v=7Xyg8Ja7dyY
+- Website : https://www.cyberpunk.net/sg/en/
+- Glitch Effect : https://www.youtube.com/watch?v=7Xyg8Ja7dyY
