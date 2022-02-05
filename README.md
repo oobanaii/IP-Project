@@ -8,7 +8,7 @@
 
 Provide us insights about your design process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
 
-####This is a website that promotes virtual reality through the use of games and immersive technology. Users can purchase the latest VR entertainment and upcomming games that will be released on this platform.
+#### This is a website that promotes virtual reality through the use of games and immersive technology. Users can purchase the latest VR entertainment and upcomming games that will be released on this platform.
 
 #### Users can login daily to claim shards, which can be used to get discounts off their purchased items. 
 #### Alternatively, they can participate in the "Spin the disc" event once a day to claim bonus shards. They can also refer this site to a friend and get 200 shards in return.
@@ -53,17 +53,12 @@ https://xd.adobe.com/view/7dbc17b8-050c-4bc0-9795-7ceaf0ac1e81-28ef/
 
 ## Credits
 ### Content
-work in progress...
+The description for the games and device compatibility were obtained from: https://www.cnet.com/pictures/best-vr-games/2/
+For cross-checking of the popular VR games, https://www.vrgamerankings.com/top-50-vr-games-all-platforms was used.
 ### Media
 The photos used in this site were obtained from ...
-beat saber:
-https://img.redbull.com/images/c_limit,w_1500,h_1000,f_auto,q_auto/redbullcom/2020/6/8/uc5ioha0qbr0arigfz8y/best-vr-games
-girl playing VR:
-https://www.roadtovr.com/wp-content/uploads/2020/02/vive-cosmos-elite-virtual-reality.jpg 
-game 'Demo':
-https://www.instant-gaming.com/en/10079-buy-demeo-pc-game-steam/ 
-game 'half-life alyx':
-https://store.steampowered.com/app/546560/HalfLife_Alyx/ 
+For Lone Echo: https://tech.fb.com/wp-content/uploads/2021/09/lone-echo-featured-image.jpg
+And for all other games: https://www.cnet.com/pictures/best-vr-games/2/  
 
 
 
