@@ -279,7 +279,7 @@ p {
 
 .heading-lg:after {
   content: "";
-  background: url("./../img/text-separator.svg");
+  background: url("text-separator.svg");
   display: block;
   height: 10px;
   background-position: left;
@@ -385,7 +385,7 @@ p {
   bottom: -30px;
   height: 30px;
   width: 100%;
-  background: url("./../img/bottom-separator.svg");
+  background: url("bottom-separator.svg");
   background-position: 0 0px;
   position: absolute;
   max-width: 100%;
@@ -433,7 +433,7 @@ p {
 }
 
 .cyber-slider__controls .current a {
-  background: url("./../img/accent-active-bullet.svg");
+  background: url("accent-active-bullet.svg");
   background-size: contain;
 }
 
@@ -479,7 +479,7 @@ p {
 }
 
 .cyber-slider__slide.active.glitching:after {
-  background: rgba(255, 255, 255, 0.4) url(./../img/glitch-lines.svg);
+  background: rgba(255, 255, 255, 0.4) url(glitch-lines.svg);
   opacity: 1;
   transform: translatex(-10%);
   background-size: contain;
