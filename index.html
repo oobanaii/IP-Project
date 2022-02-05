@@ -7,7 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Cyberpunk 2077 Slider</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;600&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +14,9 @@
 </head>
 
 <header>
-    <h2><a href="#Home" >Archane Games</a></h2>
+    <div class="content">
+        <h2 class="text" data-text="Archane Games"><a href="#Home" >Archane Games</a></h2>
+    </div>
     <nav>
         <ul>
             <li>
@@ -44,7 +45,7 @@
 
                 <li data-slideid="1" class="cyber-slider__slide active ">
                     <span class="cyber-slider__imgwrap">
-                        <img class="slide-image" src="slide-1.jpg" alt="Slide 1">
+                        <img class="slide-image" src="./img/slides/slide-1.jpg" alt="Slide 1">
                         <span class="glitch-area">
 
                         </span>
@@ -67,7 +68,7 @@
 
                 <li data-slideid="2" class="cyber-slider__slide ">
                     <span class="cyber-slider__imgwrap">
-                        <img class="slide-image" src="slide-2.jpg" alt="Slide 2">
+                        <img class="slide-image" src="./img/slides/slide-2.jpg" alt="Slide 2">
                         <span class="glitch-area">
 
                         </span>
@@ -85,7 +86,7 @@
 
                 <li data-slideid="3" class="cyber-slider__slide ">
                     <span class="cyber-slider__imgwrap">
-                        <img class="slide-image" src="slide-3.jpg" alt="Slide 3">
+                        <img class="slide-image" src="./img/slides/slide-3.jpg" alt="Slide 3">
                         <span class="glitch-area">
 
                         </span>
@@ -103,9 +104,9 @@
 
             </ul>
             <ul class="cyber-slider__controls">
-                <li data-slide="1" class="current"><a href="#"><d>content1</d><span class="sr-only">Slide 1</span></a></li>
-                <li data-slide="2"><a href="#"><d>content2</d><span class="sr-only">Slide 2</span></a></li>
-                <li data-slide="3"><a href="#"><d>Content3</d><span class="sr-only">Slide 3</span></a></li>
+                <li data-slide="1" class="current"><a href="#"><d>Home</d><span class="sr-only">Slide 1</span></a></li>
+                <li data-slide="2"><a href="#"><d>Games</d><span class="sr-only">Slide 2</span></a></li>
+                <li data-slide="3"><a href="#"><d>Cart</d><span class="sr-only">Slide 3</span></a></li>
             </ul>
         </div>
     </section>
@@ -113,19 +114,38 @@
 	<section class="about-area" id="about">
 		<h3 class="section-title">TOP 10 BEST VR GAMES 2021</h3>
 		<ul class="about-content">
-			<li class="about-left"><iframe width="560" height="315" src="https://www.youtube.com/embed/XE366PraX3I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
-			<li class="about-right">
-   
-    </li>
+			<div class="about-left"><iframe width="560" height="315" src="https://www.youtube.com/embed/XE366PraX3I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+			<div class="about-right">  </div>
 </ul>
 </section>
+
+ <section class="container">
+    <div class="card">
+        <div class="card-image"><img src= "VaderImmortalGame.jpg" alt=""></div>
+        <div class="space"><h4>Title</h4></div>
+    </div>
+    <div class="card">
+        <div class="card-image"><img src= "Astro_Bot.jpg" alt=""></div>
+        <div class="space"><h4>Title</h4></div>
+    </div>
+    <div class="card">
+        <div class="card-image"><img src= "Star_Wars_Squadrons.jpg" alt=""></div>
+        <div class="space"><h4>Title</h4></div>
+    </div>
+
+ </section>
+
+
+
+
+
+
 
 <footer>
 	<p>All Right Reserved by Josephine & Angela Wong</p>
 	</footer>
     </main>
     <script src="./js/scripts.js"></script>
-    <script src="scripts.js"></script>
 </body>
 
 </html>
