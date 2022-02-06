@@ -38,7 +38,7 @@ https://xd.adobe.com/view/7dbc17b8-050c-4bc0-9795-7ceaf0ac1e81-28ef/
   * the project uses Javascript to make the website interactive
 * JQuery
   * the project uses JQuery to simplify DOM manipulation
- * W3Schools
+* W3Schools
   * the project uses W3Schools for reference on how to make images responsive etc.
  
 ## Testing: work in progress...
