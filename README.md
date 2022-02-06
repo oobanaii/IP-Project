@@ -45,14 +45,14 @@ https://xd.adobe.com/view/7dbc17b8-050c-4bc0-9795-7ceaf0ac1e81-28ef/
 
 ## Credits
 ### Content
-The description for the games and device compatibility were obtained from: https://www.cnet.com/pictures/best-vr-games/2/
-For cross-checking of the popular VR games, https://www.vrgamerankings.com/top-50-vr-games-all-platforms was used.
+* The description for the games and device compatibility were obtained from: https://www.cnet.com/pictures/best-vr-games/2/
+  * For cross-checking of the popular VR games, https://www.vrgamerankings.com/top-50-vr-games-all-platforms was used.
 ### Media
 The photos used in this site were obtained from:
-For Lone Echo: https://tech.fb.com/wp-content/uploads/2021/09/lone-echo-featured-image.jpg
-And for all other games included in this website: https://www.cnet.com/pictures/best-vr-games/2/  
+* For Lone Echo: https://tech.fb.com/wp-content/uploads/2021/09/lone-echo-featured-image.jpg
+* And for all other games included in this website: https://www.cnet.com/pictures/best-vr-games/2/  
 
 ### Acknowledgements
 We received inspiration for this project from:
-- Website : https://www.cyberpunk.net/sg/en/
-- Glitch Effect : https://www.youtube.com/watch?v=7Xyg8Ja7dyY
+* Website : https://www.cyberpunk.net/sg/en/
+* Glitch Effect : https://www.youtube.com/watch?v=7Xyg8Ja7dyY
