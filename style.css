@@ -228,6 +228,7 @@ header h2 {
 /* navigation header design*/
 header nav li {
   margin: 0 10px;
+  display: inline;
   text-transform: uppercase;
   display: inline-block;
   padding: 0 10px;
