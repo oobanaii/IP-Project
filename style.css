@@ -661,7 +661,7 @@ body {
   flex-direction: row;
 }
 
-.card {
+.Home-card {
   background: white;
   width: 200px;
   height: 300px;
@@ -669,7 +669,7 @@ body {
   border-radius: 15px 15px 0 0;
 }
 
-.card-image {
+.Home-card-image {
   background-color: purple;
   height: 170px;
   margin-bottom: 15px;
