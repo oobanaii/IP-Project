@@ -55,8 +55,16 @@ https://xd.adobe.com/view/7dbc17b8-050c-4bc0-9795-7ceaf0ac1e81-28ef/
 
 ## Credits
 ### Content
-* The description for the games and device compatibility were obtained from: https://www.cnet.com/pictures/best-vr-games/2/
+* For the games to be included in our website, they were taken from: https://www.cnet.com/pictures/best-vr-games/2/  
   * For cross-checking of the popular VR games, https://www.vrgamerankings.com/top-50-vr-games-all-platforms was used.
+* For most game descriptions, they were taken from: https://store.steampowered.com/
+  * For Wipeout Omega Collection's description, it was taken from: https://en.wikipedia.org/wiki/Wipeout_Omega_Collection and https://www.playstation.com/en-sg/games/wipeout-omega-collection/
+  * For Firewall Zero Hour's description, it was taken from: https://en.wikipedia.org/wiki/Firewall:_Zero_Hour and https://www.playstation.com/en-sg/games/firewall-zero-hour/
+  * For Astro Bot Rescue Mission's description, it was taken from: https://en.wikipedia.org/wiki/Astro_Bot_Rescue_Mission
+  * For Lone Echo's description, it was taken from: https://www.oculus.com/experiences/rift/1368187813209608/
+* For the pricing of the games, they were takn from: https://store.steampowered.com/ and https://www.playstation.com/en-sg/games/ 
+* For the device compatibility, they were obtained from: https://www.cnet.com/pictures/best-vr-games/2/
+
 ### Media
 The photos used in this site were obtained from:
 * For Lone Echo: https://tech.fb.com/wp-content/uploads/2021/09/lone-echo-featured-image.jpg
