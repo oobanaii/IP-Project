@@ -9,7 +9,7 @@ Alternatively, they can participate in the "Spin the disc" event once a day to c
 
 * As a customer, I want to collect shards so I can purchase the virtual reality games at a discounted price.
 * As a customer, I want to find out more about the upcomming virtual reality games that are available.
-* As user, I want to purchase the latest virtual reality games at a discounted price.
+* As a user, I want to purchase the latest virtual reality games at a discounted price.
 * As a user, I want to purchase discounted virtual reality games.
 * As a site owner, I want to sell as many virtual reality games as possible.  
 
@@ -41,7 +41,17 @@ https://xd.adobe.com/view/7dbc17b8-050c-4bc0-9795-7ceaf0ac1e81-28ef/
 * W3Schools
   * the project uses W3Schools for reference on how to make images responsive etc.
  
-## Testing: work in progress...
+## Testing
+1. Contact form:
+  i.  Go to the "Contact" Page
+  ii. Try to submit an empty form and verify that an error message about the required fields appears
+  iii.Try to submit the form with an invalid email address and verify that a relevant error message appears
+  iv. Try to submit the form with all inputs valid and verify that a success message appears.
+2. Checkout page:
+  i.  Go to the "Cart" page
+  ii. Try to submit an empty cart and verify that an error message about the required fields appears
+  iii.Try to submit the checkout informtion with invalid email address, credit card character count and verify that a relevant error message appears
+  iv. Try to submit the form with all inputs valid and verify that a scucess message appears.
 
 ## Credits
 ### Content
