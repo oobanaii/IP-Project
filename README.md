@@ -47,7 +47,7 @@ https://xd.adobe.com/view/7dbc17b8-050c-4bc0-9795-7ceaf0ac1e81-28ef/
 2. Try to submit an empty form and verify that an error message about the required fields appears
 3. Try to submit the form with an invalid email address and verify that a relevant error message appears
 4. Try to submit the form with all inputs valid and verify that a success message appears
-##### Checkout page:
+#### Checkout page:
 1. Go to the "Cart" page
 2. Try to submit an empty cart and verify that an error message about the required fields appears
 3. Try to submit the checkout informtion with invalid email address, credit card character count and verify that a relevant error message appears
