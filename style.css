@@ -20,6 +20,7 @@ h4 {
   margin-top: 0;
 }
 
+
 /*header Section*/
 
 header {
@@ -38,200 +39,35 @@ header {
   align-items: center;
   background-color: black;
   color: black;
-  padding: 15px 70px;
+  padding: 18px 70px;
   border-style: solid;
   border-radius: 1px;
-  border-color: black;
+  border-color: rgb(255, 0, 253);
+  animation: bordercolor 7s linear infinite;
 }
 
 header a {
   text-decoration: none;
-  color: #fff;
+  color: rgb(0, 255, 253);
+  font-family: "VT323", monospace;
 }
 
 /*Archane Games Title Uppercase*/
 header h2 {
   list-style: none;
   text-transform: uppercase;
-  color: white;
+  color: rgb(0, 255, 253);
+  font-size: 2rem;
+  font-family: "Orbitron", sans-serif;
 }
-/*Glitch */
-.content {
-  width: 100%;
-  height: 100%;
-  display: flex;
-}
-.content .text {
-  position: relative;
-  color: #fff;
-  font-weight: 700;
-  font-size: 20px;
-  transform: scale(2);
-  padding: 30px;
-  letter-spacing: 2px;
-  align-items: center;
-  text-transform: uppercase;
-}
-.content .text:before,
-.content .text:after {
-  padding: 30px;
-  color: white;
-  content: attr(data-text);
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: black;
-  overflow: hidden;
-  top: 0;
-}
-.content .text:before {
-  left: 3px;
-  text-shadow: -2px 0 purple;
-  animation: glitch-1 2s linear infinite reverse;
-}
-.content .text:after {
-  left: -3px;
-  text-shadow: -2px 0 blue;
-  animation: glitch-2 2s linear infinite reverse;
-}
-@keyframes glitch-1 {
-  0% {
-    clip: rect(132px, auto, 101px, 30px);
-  }
-  5% {
-    clip: rect(17px, auto, 94px, 30px);
-  }
-  10% {
-    clip: rect(40px, auto, 66px, 30px);
-  }
-  15% {
-    clip: rect(87px, auto, 82px, 30px);
-  }
-  20% {
-    clip: rect(137px, auto, 61px, 30px);
-  }
-  25% {
-    clip: rect(34px, auto, 14px, 30px);
-  }
-  30% {
-    clip: rect(133px, auto, 74px, 30px);
-  }
-  35% {
-    clip: rect(76px, auto, 107px, 30px);
-  }
-  40% {
-    clip: rect(59px, auto, 130px, 30px);
-  }
-  45% {
-    clip: rect(29px, auto, 84px, 30px);
-  }
-  50% {
-    clip: rect(22px, auto, 67px, 30px);
-  }
-  55% {
-    clip: rect(67px, auto, 62px, 30px);
-  }
-  60% {
-    clip: rect(10px, auto, 105px, 30px);
-  }
-  65% {
-    clip: rect(78px, auto, 115px, 30px);
-  }
-  70% {
-    clip: rect(105px, auto, 13px, 30px);
-  }
-  75% {
-    clip: rect(15px, auto, 75px, 30px);
-  }
-  80% {
-    clip: rect(66px, auto, 39px, 30px);
-  }
-  85% {
-    clip: rect(133px, auto, 73px, 30px);
-  }
-  90% {
-    clip: rect(36px, auto, 128px, 30px);
-  }
-  95% {
-    clip: rect(68px, auto, 103px, 30px);
-  }
-  100% {
-    clip: rect(14px, auto, 100px, 30px);
-  }
-}
-@keyframes glitch-2 {
-  0% {
-    clip: rect(129px, auto, 36px, 30px);
-  }
-  5% {
-    clip: rect(36px, auto, 4px, 30px);
-  }
-  10% {
-    clip: rect(85px, auto, 66px, 30px);
-  }
-  15% {
-    clip: rect(91px, auto, 91px, 30px);
-  }
-  20% {
-    clip: rect(148px, auto, 138px, 30px);
-  }
-  25% {
-    clip: rect(38px, auto, 122px, 30px);
-  }
-  30% {
-    clip: rect(69px, auto, 54px, 30px);
-  }
-  35% {
-    clip: rect(98px, auto, 71px, 30px);
-  }
-  40% {
-    clip: rect(146px, auto, 34px, 30px);
-  }
-  45% {
-    clip: rect(134px, auto, 43px, 30px);
-  }
-  50% {
-    clip: rect(102px, auto, 80px, 30px);
-  }
-  55% {
-    clip: rect(119px, auto, 44px, 30px);
-  }
-  60% {
-    clip: rect(106px, auto, 99px, 30px);
-  }
-  65% {
-    clip: rect(141px, auto, 74px, 30px);
-  }
-  70% {
-    clip: rect(20px, auto, 78px, 30px);
-  }
-  75% {
-    clip: rect(133px, auto, 79px, 30px);
-  }
-  80% {
-    clip: rect(78px, auto, 52px, 30px);
-  }
-  85% {
-    clip: rect(35px, auto, 39px, 30px);
-  }
-  90% {
-    clip: rect(67px, auto, 70px, 30px);
-  }
-  95% {
-    clip: rect(71px, auto, 103px, 30px);
-  }
-  100% {
-    clip: rect(83px, auto, 40px, 30px);
-  }
-}
+
 /*navigation header link Design*/
 /* navigation header design*/
 header nav li {
-  margin: 0 10px;
-  display: inline;
+  margin: 0 15px;
   text-transform: uppercase;
   display: inline-block;
-  padding: 0 10px;
+  padding: 0 15px;
   color: white;
 }
 
@@ -242,7 +78,8 @@ header nav li a {
   justify-content: flex-end;
   /*Delay of mouse hovering*/
   transition: all 0.3s ease 0s;
-  color: #fff;
+  color: rgb(0, 255, 253);
+  font-family: "Orbitron", sans-serif;
 }
 /*Delay of mouse hovering change to black*/
 header nav li a:hover {
@@ -276,6 +113,7 @@ p {
 
 .heading-lg {
   font-size: 2rem;
+  font-family: "Orbitron", sans-serif;
 }
 
 .heading-lg:after {
@@ -291,6 +129,10 @@ p {
 }
 
 /* Single Slide */
+.cyber-slider__content {
+  opacity: 1;
+}
+
 .cyber-slider {
   background: black;
   position: relative;
@@ -373,6 +215,9 @@ p {
 .cyber-slider__slidetext {
   max-width: 650px;
   background: #f9eb06;
+  border-style: solid;
+  border: 1px;
+  border-color: rgb(255, 137, 0);
   width: auto;
   padding: 30px;
   position: relative;
@@ -394,6 +239,8 @@ p {
 
 /* Controls */
 
+/* Change Color*/
+
 .cyber-slider__controls {
   position: absolute;
   z-index: 999;
@@ -406,8 +253,6 @@ p {
   right: 0;
   margin: auto;
   justify-content: center;
-  color: white;
-  text-decoration: none;
 }
 
 .cyber-slider__controls a {
@@ -427,7 +272,7 @@ p {
   display: block;
   width: 20px;
   height: 20px;
-  background: #f9eb06;
+  background: rgb(0, 255, 253);
 }
 .cyber-slider__controls a:hover {
   opacity: 0.8;
@@ -550,6 +395,11 @@ p {
   }
 }
 
+.content {
+  color: rgb(0, 255, 253);
+  font-family: "VT323", monospace;
+}
+
 /* section layout flex containers*/
 section {
   display: -webkit-flex;
@@ -564,7 +414,7 @@ section {
 
 .home-section {
   position: relative;
-  background-color: rgb(53, 17, 53);
+  background-color: black;
 }
 
 /*Resize section layout */
@@ -579,19 +429,9 @@ section {
   }
 }
 
-/* Top Vr Games Content*/
-/*Section paragraph layout*/
-section p {
-  max-width: 800px;
-  text-align: center;
-  margin-bottom: 35px;
-  padding: 0 20px;
-  line-height: 2;
-}
-
 /* Top Vr layout flex containers*/
 .about-area {
-  background-color: rgb(10, 10, 56);
+  background-color: #000;
 }
 
 ul.about-content {
@@ -622,10 +462,12 @@ ul.about-content {
 /* content positioning*/
 .about-right {
   flex-basis: 60%;
+  color: #fff;
+  font-family: "Orbitron", sans-serif;
 }
 
 /* Top Vr content paragraph layout*/
-.about-area p {
+.about-area d {
   max-width: 800px;
   margin-bottom: 35px;
   line-height: 1.5;
@@ -646,46 +488,15 @@ ul.about-content {
   .about-left,
   .about-right {
     flex-basis: 100%;
+    color: #fff;
+    font-family: "Orbitron", sans-serif;
   }
   .about-content li {
     padding: 8px;
   }
 }
 
-body {
-  background: rgb(27, 27, 27);
-}
-
-.container {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-}
-
-.Home-card {
-  background: white;
-  width: 200px;
-  height: 300px;
-  margin: 5px;
-  border-radius: 15px 15px 0 0;
-}
-
-.Home-card-image {
-  background-color: purple;
-  height: 170px;
-  margin-bottom: 15px;
-  background-size: cover;
-  border-radius: 15px 15px 0 0;
-}
-
-.space {
-  background-color: #fff;
-  height: 170px;
-  margin-bottom: 15px;
-  background-size: cover;
-}
-
-.footer {
+footer {
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -697,5 +508,7 @@ body {
   color: #fff;
   background-color: #000;
   padding: 60px 0;
+  border-style: solid;
+  border-radius: 1px;
+  border-color: rgb(255, 0, 253);
 }
-
