@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Signup page</title>
+
+<body>
+<section class="Signup-section" id="Signup">
+    <div class="Signup-img"></div>
+  <div class="loginBox"> <img class="user" src="Logo.png" height="100px" width="100px">
+    <h3>SIGN UP</h3>
+    <form action="login.php" method="post">
+    <div class="inputBox"> <input id="uname" type="text" name="Username" placeholder="Username"> 
+    <input id="email" type="Email" name="Email" placeholder="Email"> 
+    <input id="pass" type="password" name="Password" placeholder="Password"> 
+    <input id="pass" type="password" name="Re-enter-Password" placeholder="Re-Enter Password"> 
+    </div> <input type="submit" name="" value="Submit">
+    </form> 
+
+</div>
+</section>
+
+
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+
+}
+
+.Signup-section .Signup-img {
+    background: url(Background.jpg) no-repeat;
+	position: absolute; /*postion to left below header*/
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+  /*Loginpage image crop to fit the page for small devices*/
+	-webkit-background-size: cover;
+	background-size: cover;
+  /*Overflow just to prevent scroll bars from showing only nescessary*/
+  overflow: hidden;
+  /*image put behind the heading*/
+  z-index: -1;
+  font-family: sans-serif;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+.Signup-section .Signup-img:after {
+	content: '';   /*Empty layer*/
+	position: absolute;   /*Same postion as the image*/
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+  /*color opacity: just to dim*/
+	background-color: #000;  
+	opacity: .8;
+}
+
+
+@media screen and (max-width: 600px;)
+ {
+    body {
+        background-size: cover;
+    
+    }
+}
+
+#particles-js {
+    height: 100%
+}
+
+.loginBox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    min-height: 200px;
+    background: #000000;
+    border-radius: 10px;
+    padding: 40px;
+    box-sizing: border-box
+}
+
+.user {
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 20px
+}
+
+h3 {
+    margin: 0;
+    padding: 0 0 20px;
+    color: white;
+    text-align: center
+}
+
+.loginBox input {
+    width: 100%;
+    margin-bottom: 20px
+}
+
+.loginBox input[type="Email"],
+.loginBox input[type="Email"] {
+    border: none;
+    border-bottom: 2px solid #262626;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    background: transparent;
+    font-size: 16px;
+    padding-left: 20px;
+    box-sizing: border-box
+}
+
+.loginBox input[type="Email"]:hover,
+.loginBox input[type="Email"]:hover {
+    color: #42F3FA;
+    border: 1px solid #42F3FA;
+    box-shadow: 0 0 5px rgba(0, 255, 0, .3), 0 0 10px rgba(0, 255, 0, .2), 0 0 15px rgba(0, 255, 0, .1), 0 2px 0 black
+}
+
+
+
+
+.loginBox input[type="text"],
+.loginBox input[type="password"] {
+    border: none;
+    border-bottom: 2px solid #262626;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    background: transparent;
+    font-size: 16px;
+    padding-left: 20px;
+    box-sizing: border-box
+}
+
+.loginBox input[type="text"]:hover,
+.loginBox input[type="password"]:hover {
+    color: #42F3FA;
+    border: 1px solid #42F3FA;
+    box-shadow: 0 0 5px rgba(0, 255, 0, .3), 0 0 10px rgba(0, 255, 0, .2), 0 0 15px rgba(0, 255, 0, .1), 0 2px 0 black
+}
+
+.loginBox input[type="text"]:focus,
+.loginBox input[type="password"]:focus {
+    border-bottom: 2px solid #42F3FA
+}
+
+.inputBox {
+    position: relative
+}
+
+.inputBox span {
+    position: absolute;
+    top: 10px;
+    color: #262626
+}
+
+.loginBox input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    font-size: 16px;
+    background: #59238F;
+    color: #fff;
+    border-radius: 20px;
+    border-color:rgb(255, 0, 253) ;
+    cursor: pointer
+}
+
+
+
+.loginBox a {
+    color: #59238F;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    display: block
+}
+
+a:hover {
+    color: #00ffff
+}
+
+.loginBox b {
+    color: #59238F;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    display: block
+
+}
+
+b:hover {
+    cursor: pointer;
+    color: #00ffff
+
+}
+</style>
+</body>
+
+</html>
