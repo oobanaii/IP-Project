@@ -1,337 +1,528 @@
 @import "normalize.min.css";
+* {
+  box-sizing: border-box;
+  font-family: Raleway;
+  color: #777;
+  
+}
+html {
+  font-family: "Maven Pro", sans-serif;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
 body {
-    /*background-image: url('../img/background.webp');*/
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 100vh;
-    font-family: Arial, Helvetica, sans-serif;
+  background-color: gainsboro;
 }
 header {
-    top: 0;
-    left: 0;
-    z-index: 10;
-    width: 100%;
-    /* navigation header layout border design*/
-    /*Flexboxes for positioning the navigation links*/
-    display: -webkit-flex; /*Googlechrome*/
-    display: -moz-flex; /*mozilla firefox*/
-    display: -ms-flex; /*microsoft internet explorer*/
-    display: -o-flex; /*opera*/
-    display: flex; /* Display flebox a container that expands items to fill available free space or shrinks them to stop congestion*/
-    justify-content: space-between;
-    align-items: center;
-    background-color: black;
-    color: black;
-    padding: 15px 70px;
-    border-style: solid;
-    border-radius: 1px;
-    border-color: black;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  /* navigation header layout border design*/
+  /*Flexboxes for positioning the navigation links*/
+  display: -webkit-flex; /*Googlechrome*/
+  display: -moz-flex; /*mozilla firefox*/
+  display: -ms-flex; /*microsoft internet explorer*/
+  display: -o-flex; /*opera*/
+  display: flex; /* Display flebox a container that expands items to fill available free space or shrinks them to stop congestion*/
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: black;
+  padding: 18px 70px;
+  border-style: solid;
+  border-radius: 1px;
+  border-color: rgb(255, 0, 253);
+  animation: bordercolor 7s linear infinite;
 }
 
 header a {
-    text-decoration: none;
-    color: #fff;
+  text-decoration: none;
+  color: rgb(0, 255, 253);
+  font-family: "VT323", monospace;
 }
 
 /*Archane Games Title Uppercase*/
 header h2 {
-    list-style: none;
-    text-transform: uppercase;
-    color: white;
-} 
-    
-h3, .g-price {
-    font-size: 20px;
-    /*font-size: 32px;*/
-    font-weight: 700;
-    margin-bottom: 50px;
+  list-style: none;
+  text-transform: uppercase;
+  color: rgb(0, 255, 253);
+  font-size: 2rem;
+  font-family: "Orbitron", sans-serif;
 }
-    
-.g-price {
-    margin: 8px 60px;
+
+/*navigation header link Design*/
+/* navigation header design*/
+header nav li {
+  margin: 0 15px;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 0 15px;
+  color: white;
 }
-    
+
+/*navigation header hover button design mouse hovering*/
+header nav li a {
+  margin: 0 50px;
+  display: flex;
+  justify-content: flex-end;
+  /*Delay of mouse hovering*/
+  transition: all 0.3s ease 0s;
+  color: rgb(0, 255, 253);
+  font-family: "Orbitron", sans-serif;
+}
+/*Delay of mouse hovering change to black*/
+header nav li a:hover {
+  color: purple;
+}
+
+/*Media size change for larger devices for the header*/
+@media (max-width: 1000px) {
+  header {
+    padding: 15px 50px;
+  }
+}
+
+/*Media size change for smaller devices for the header*/
+@media (max-width: 700px) {
+  header {
+    flex-direction: column;
+  }
+  header h2 {
+    margin-bottom: 15px;
+  }
+  header nav li {
+    margin: 0 8px;
+  }
+}
+
+
+
+.content-section {
+  margin: 0.5em;
+}
+
+
+
 .container {
-    width: 100%;
-    /*max-width: 780px;*/
-    margin: 0 auto;
-    /*padding: 0 10px;*/
-    display: flex;
-    justify-content: space-between;
-}
-    
-@media (max-width: 950px) {
-    .container {
-        display: block;
-    }
-}      
-    
-.screen-togo, .screen-cart {
-/*width: 500px;*/
-    width:100%;
-    height: auto;
-    /*max-height: 770px;*/
-    overflow: scroll;
-    border-radius: 20px;
-    background: white;
-    padding-top: 30px;
-    padding-left: 10px;
-    margin-bottom: 20px;
-    margin-right: 20px;
-    box-shadow: 0px 0px 70px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-}
-    
-ul {
-    padding: 0;
-    list-style: none;
-}
-    
-.game-avail {
-    background: #E4F0FD;
-    border-radius: 20px 0 0 20px;
-    margin: 30px 0;
-    padding-top: 25px;
-    padding-right: 30px;
-    padding-bottom: 10px;
-    position: relative;
-}
-    
-.game-avail:nth-child(2n) {
-    background: #FBE4F0;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0 1.5em;
+
 }
 
-.game-avail:nth-child(3n) {
-    background: #F7F7FE;
+/* styling for modal starts here*/
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 300px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
-.game-avail:nth-child(4n) {
-    background: #E4FDF1;
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
 }
 
-.game-avail img {
-    width: 200px;
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: rgb(167, 161, 161);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: rgb(6, 6, 68);
+  color: white;
+}
+
+.modal-body {
+  padding: 2px 16px;
+}
+
+.modal-button {
+  border: none;	
+  outline: 0;
+  padding: .67em .67em;
+  color: white;
+  background-color: pink;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  height: auto;
+  font-size: 1.05em;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: .3em
+}
+.modal-button:hover {
+  background-color: palevioletred;
+}
+
+/* for add to cart*/
+.btn {
+  text-align: center;
+  vertical-align: middle;
+  padding: .67em .67em;
+  cursor: pointer;
+}
+
+.btn-header {
+  margin: .5em 15% 2em 15%;
+  color: white;
+  border: 2px solid #2D9CDB;
+  background-color: rgba(255, 255, 255, .1);
+  border-radius: 0;
+  font-size: 1.5em;
+  font-weight: lighter;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.btn-header:hover {
+  background-color: rgba(255, 255, 255, .3);
+}
+
+.btn-play {
+  display: block;
+  margin: 0 auto;
+  color: #2D9CDB;
+  font-size: 4em;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  padding: 0;
+  text-align: center;
+}
+
+.btn-primary {
+  color: white;
+  background-color: #56CCF2;
+  border: none;
+  border-radius: .3em;
+  font-size: 1.05em;
+  font-weight: bold;
+  width: 100%;
+  height: auto;
+}
+
+.btn-primary:hover {
+  background-color: #2D9CDB;
+}
+
+.shop-item {
+  margin: 10px;
+}
+
+.shop-item-title {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.25em;
+  color: #333;
+  margin-bottom: 15px;
+  padding: 20px;
   
-    position: absolute;
-    bottom: 5px;
-    left: -2px;
-    border-radius: 20px;
 }
 
-.game-avail .add-button {
-    position: absolute;
-    border: none;
-    background: #6B00F5;
-    margin: 8px 60px;
-    padding: 6px 20px 4px;
-    border-radius: 20px;
-    color: white;
-        font-weight: 700;
-        font-size: 16px;
-        bottom: -10px;
-        left: 150px;
-        transition: all 0.3s;
-    }
+.shop-item-image {
+  /*width: 100%;
+  max-width: 400px;
+  height: auto;*/
+  
+  height: 250px;
+
+}
+
+.shop-item-details {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0;
+}
+
+.shop-item-price {
+  flex-grow: 1;
+  text-align: center;
+  padding: 6px;
+  font-size: 1.2em;
+  color: #333;
+  background-color: gainsboro;
+
+}
+
+.shop-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+  
+}
+
+.cart-header {
+  font-weight: bold;
+  font-size: 1.25em;
+  color: #333;
+}
+
+.cart-column {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid black;
+  margin-right: 1.5em;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+
+.cart-row {
+  display: flex;
+}
+
+.cart-item {
+  width: 45%;
+}
+
+.cart-price {
+  width: 20%;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.cart-quantity {
+  width: 35%;
+}
+
+.cart-item-title {
+  color: #333;
+  margin-left: .5em;
+  font-size: 1.2em;
+}
+
+.cart-item-image {
+  width: 75px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.btn-danger {
+  color: white;
+  background-color: #EB5757;
+  border: none;
+  border-radius: .3em;
+  font-weight: bold;
+}
+
+.btn-danger:hover {
+  background-color: #CC4C4C;
+}
+
+.cart-quantity-input {
+  height: 34px;
+  width: 50px;
+  border-radius: 5px;
+  border: 1px solid #56CCF2;
+  background-color: #eee;
+  color: #333;
+  padding: 0;
+  text-align: center;
+  font-size: 1.2em;
+  margin-right: 25px;
+}
+
+.cart-row:last-child {
+  border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+  border: none;
+}
+
+.cart-total {
+  text-align: end;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.cart-total-title {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: black;
+  margin-right: 20px;
+}
+
+.cart-total-price {
+  color: #333;
+  font-size: 1.1em;
+}
+
+.btn-purchase {
+  display: block;
+  margin: 40px auto 80px auto;
+  font-size: 1.5em;
+}
+
+@media screen and (max-width: 576px) {
+  .shop-item {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+  .shop-item-image {
+    width: 100%;
+    height: auto;
+  }
+ 
     
-    .game-avail .add-button:hover {
-        background: #5815AE;
-    }
+  
+  .shop-item-details {
+    width: 100%;
+    height: auto;
+  }
+}
+@media screen and (min-width: 576px) {
+  .shop-item {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+  .shop-item-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .shop-item-details {
+    width: 100%;
+    height: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .shop-item {
+    width: 45%;
+    display: block;
+    margin-bottom: 20px;
+  }
+  .shop-item-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .shop-item-details {
+    width: 100%;
+    height: auto;
+  }
+}
+@media screen and (min-width: 992px) {
+  .shop-item {
+    width: 20%;
+    display: block;
+    margin-bottom: 20px;
+  }
+  .shop-item-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .shop-item-details {
+    width: 100%;
+    height: auto;
+  }
 
-    .game-dets {
-        margin-left: 150px;
-        padding-bottom: 15px;
-    }
-    
-    .game-heading {
-        font-size: 18px;
-        margin: 10px 60px 12px;
-    }
-    
-      .screen-cart {
-        padding-right: 30px;
-      }
-    
-      @keyframes fadeIn {
-        from {
-          opacity: 0;
-          transform: translate(10px);
-        }
-        to {
-          opacity: 1;
-          transform: translate(0);
-        }
-      }
+}
+@media screen and (min-width: 1200px) {
+  .shop-item {
+    width: 20%;
+    display: block;
+    /*margin-bottom: 20px;*/
+  }
+  .shop-item-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .shop-item-details {
+    width: 100%;
+    height: auto;
+  }
+}
 
-      .cart-item {
-        display: flex;
-        align-items: flex-start;
-        padding-bottom: 25px;
-        margin-bottom: 25px;
-        border-bottom: 1px solid #D7D7F9;
-        animation: fadeIn 0.3s;
-      }
-
-      .cart-item:last-child {
-        border-bottom: 5px solid #D7D7F9;
-      }
-
-      .cart-item img {
-        width: 200px;
-        border-radius: 20px;
-      }
-
-      .cart-item .g-price {
-        font-size: 24px;
-      }
-    
-      .cart-item-dets {
-        margin-left: 15px;
-        width: 100%;
-      }
-    
-      .cart-item-heading {
-        /*margin: 10px 0;*/
-        font-size: 18px;
-        margin: 10px 60px 12px;
-      }
-    
-      .cart-math-item {
-        margin: 5px 0;
-        font-weight: 700;
-      }
-
-      .cart-math-item span {
-        display: inline-block;
-        text-align: right;
-      }
-
-      .cart-math-item .cart-math-header {
-        width: 50%;
-      }
-
-      .cart-math-item .g-price {
-        width: 40%;
-      }
-
-      /* styling for checkout form*/
-      .open-button {
-        background-color: #555;
-        color: white;
-        padding: 16px 20px;
-        border: none;
-        cursor: pointer;
-        opacity: 0.8;
-        position: fixed;
-        bottom: 23px;
-        right: 28px;
-        width: 280px;
-      }
-
-      /* The popup form - hidden by default */
-      .form-popup {
-        /*margin: auto;*/
-        float: right;
-        display: none;
-        /*position: fixed;*/
-        position: fixed;
-        /*bottom: 450px;*/
-
-        bottom: 10px;
-        /*right: 15px;*/
-        border: 3px solid #f1f1f1;
-        z-index: 9;
-      }
-
-      /* Add styles to the form container */
-      .row {
-        display: -ms-flexbox; /* IE10 */
-        display: flex;
-        -ms-flex-wrap: wrap; /* IE10 */
-        flex-wrap: wrap;
-        margin: 0 -16px;
-        
-      }
-
-      .col-25 {
-        -ms-flex: 25%; /* IE10 */
-        flex: 25%;
-      }
-
-      .col-50 {
-        -ms-flex: 25%; /* IE10 */
-        flex: 25%;
-      }
-
-      .col-75 {
-        -ms-flex: 25%; /* IE10 */
-        flex: 25%;
-    }
-
-      .col-50,
-      .col-75 {
-        padding: 0 16px;
-      }
-
-      .form-container {
-        
-        /*margin: auto;*/
-        width: 60%;
-        height: auto;
-        display: inline-block;
-        padding-bottom: 20px;
-        margin: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        /*max-width: 300px;*/
-        /*padding: 350px;*/
-        background-color: white;
-        
-      }
-    
-      /* Full-width input fields */
-      .form-container input[type=text], .form-container input[type=password] {
-        
-        /*margin: auto;*/
-        width: 100%;
-        height: auto;
-        
-        /*display: flex;
-        justify-content: center;
-        align-items: center;
-        /*padding: 15px;*/
-        /*margin: 5px 0 22px 0;*/
-        margin: 6px;
-        padding-bottom: 0;
-        border: none;
-        background: #f1f1f1;
-      }
-    
-      /* When the inputs get focus, do something */
-      .form-container input[type=text]:focus, .form-container input[type=password]:focus {
-        background-color: #ddd;
-        outline: none;
-      }
-
-      /* Set a style for the checkout button */
-      .form-container .btn {
-        background-color: #04AA6D;
-        color: white;
-        padding: 16px 20px;
-        border: none;
-        cursor: pointer;
-        width: 100%;
-        margin-bottom:10px;
-        opacity: 0.8;
-      }
-
-      /* Add a red background color to the cancel button */
-      .form-container .cancel {
-        background-color: red;
-      }
-    
-      /* Add some hover effects to buttons */
-      .form-container .btn:hover, .open-button:hover {
-        opacity: 1;
-      }
+/* @media screen and (max-width: 576px) {
+  .container {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  } 
+} 
+@media screen and (min-width: 576px) {
+  .container {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+} 
+@media screen and (min-width: 768px) {
+  .container{
+    width: 50%;
+    display: block;
+    margin-bottom: 20px;
+  }
+  
+}
+@media screen and (min-width: 992px) {
+  .container {
+    width: 25%;
+    display: block;
+    margin-bottom: 20px;
+  }
+  
+} 
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 25%;
+    display: block;
+    margin-bottom: 20px;
+  }
+  
+}   */          
