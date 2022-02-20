@@ -8,35 +8,66 @@
     <title>Cyberpunk 2077 Slider</title>
 
 <body>
-  <div class="loginBox"> <img class="user" src="https://i.ibb.co/yVGxFPR/2.png" height="100px" width="100px">
-    <h3>Sign in here</h3>
+<section class="login-section" id="login">
+    <div class="login-img"></div>
+  <div class="loginBox"> <img class="user" src="Logo.png" height="100px" width="100px">
+    <h3>LOGIN</h3>
     <form action="login.php" method="post">
-        <div class="inputBox"> <input id="uname" type="text" name="Username" placeholder="Username"> <input id="pass" type="password" name="Password" placeholder="Password"> </div> <input type="submit" name="" value="Login">
-    </form> <a href="#">Forget Password<br> </a>
-    <div class="text-center">
-        <p style="color: #59238F;">Sign-Up</p>
-    </div>
+    <div class="inputBox"> <input id="uname" type="text" name="Username" placeholder="Username"> <input id="pass" type="password" name="Password" placeholder="Password"> </div> <input type="submit" name="" value="Login">
+    </form> 
+    <a href="#">Forget Password<br></a>
+    <b href="#"> Sign-Up</b>
 </div>
+</section>
+
 
 <style>
   body {
     margin: 0;
     padding: 0;
-    background: url(slide-1.jpg) no-repeat;
     height: 100vh;
-    font-family: sans-serif;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    overflow: hidden
+
 }
 
-@media screen and (max-width: 600px;
+.login-section .login-img {
+    background: url(Background.jpg) no-repeat;
+	position: absolute; /*postion to left below header*/
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+  /*Loginpage image crop to fit the page for small devices*/
+	-webkit-background-size: cover;
+	background-size: cover;
+  /*Overflow just to prevent scroll bars from showing only nescessary*/
+  overflow: hidden;
+  /*image put behind the heading*/
+  z-index: -1;
+  font-family: sans-serif;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
-) {
+
+.login-section .login-img:after {
+	content: '';   /*Empty layer*/
+	position: absolute;   /*Same postion as the image*/
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+  /*color opacity: just to dim*/
+	background-color: #000;  
+	opacity: .8;
+}
+
+
+@media screen and (max-width: 600px;)
+ {
     body {
         background-size: cover;
-        : fixed
+    
     }
 }
 
@@ -66,7 +97,7 @@
 h3 {
     margin: 0;
     padding: 0 0 20px;
-    color: #59238F;
+    color: white;
     text-align: center
 }
 
@@ -118,11 +149,14 @@ h3 {
     background: #59238F;
     color: #fff;
     border-radius: 20px;
+    border-color:rgb(255, 0, 253) ;
     cursor: pointer
 }
 
+
+
 .loginBox a {
-    color: #262626;
+    color: #59238F;
     font-size: 14px;
     font-weight: bold;
     text-decoration: none;
@@ -134,8 +168,20 @@ a:hover {
     color: #00ffff
 }
 
-p {
-    color: #0000ff
+.loginBox b {
+    color: #59238F;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    display: block
+
+}
+
+b:hover {
+    cursor: pointer;
+    color: #00ffff
+
 }
 </style>
 </body>
