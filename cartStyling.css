@@ -1,8 +1,8 @@
 @import "normalize.min.css";
 * {
   box-sizing: border-box;
-  font-family: Raleway;
-  color: #777;
+  /*font-family: Raleway;
+  color: #777;*/
   
 }
 html {
@@ -14,7 +14,9 @@ html, body {
   min-height: 100%;
 }
 body {
-  background-color: gainsboro;
+  background-color: #aba9d3;
+  /*background-color: #caccce;*/
+  
 }
 header {
   top: 0;
@@ -120,14 +122,16 @@ header nav li a:hover {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  padding-top: 300px; /* Location of the box */
+  padding-top: 200px; /* Location of the box */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  overflow: hidden; /* hide scroll bar */
+  /*background-color: rgb(0,0,0); /* Fallback color */
+  /*background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+
+  
 }
 
 /* Modal Content */
@@ -138,6 +142,9 @@ header nav li a:hover {
   padding: 0;
   border: 1px solid #888;
   width: 80%;
+  max-width: 800px;
+  height: auto;
+  max-height: 1000px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
@@ -173,12 +180,16 @@ header nav li a:hover {
 
 .modal-header {
   padding: 2px 16px;
-  background-color: rgb(6, 6, 68);
+  background-color: #3a4e93;
   color: white;
 }
 
 .modal-body {
+  /*max-width: 400px;
+  max-height: 800px;*/
   padding: 2px 16px;
+  background-color: #3a4e93;
+  color: white;
 }
 
 .modal-button {
@@ -186,7 +197,8 @@ header nav li a:hover {
   outline: 0;
   padding: .67em .67em;
   color: white;
-  background-color: pink;
+  background-color: #aba9d3;
+  /*background-color: #fdf800;*/
   text-align: center;
   cursor: pointer;
   width: 100%;
@@ -238,7 +250,8 @@ header nav li a:hover {
 
 .btn-primary {
   color: white;
-  background-color: #56CCF2;
+  /*background-color: #56CCF2;*/
+  background-color: #aba9d3;
   border: none;
   border-radius: .3em;
   font-size: 1.05em;
@@ -253,6 +266,8 @@ header nav li a:hover {
 
 .shop-item {
   margin: 10px;
+  border-style: solid;
+  border-color: black;
 }
 
 .shop-item-title {
@@ -261,7 +276,7 @@ header nav li a:hover {
   text-align: center;
   font-weight: bold;
   font-size: 1.25em;
-  color: #333;
+  color: white;
   margin-bottom: 15px;
   padding: 20px;
   
@@ -282,6 +297,7 @@ header nav li a:hover {
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 0;
+  
 }
 
 .shop-item-price {
@@ -289,8 +305,8 @@ header nav li a:hover {
   text-align: center;
   padding: 6px;
   font-size: 1.2em;
-  color: #333;
-  background-color: gainsboro;
+  color: white;
+  /*background-color: gainsboro;*/
 
 }
 
@@ -401,7 +417,10 @@ header nav li a:hover {
 .btn-purchase {
   display: block;
   margin: 40px auto 80px auto;
-  font-size: 1.5em;
+  font-size: 1.25em;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
 }
 
 @media screen and (max-width: 576px) {
@@ -525,4 +544,28 @@ header nav li a:hover {
     margin-bottom: 20px;
   }
   
-}   */          
+}   */    
+
+/* styling for iframe starts here*/
+.responsive-iframe {
+  position: absolute;
+  display: block;
+  margin: auto 0px;
+  padding: 10px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+
+}
+.vidContainer {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  
+}
+  
