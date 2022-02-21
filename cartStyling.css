@@ -14,7 +14,8 @@ html, body {
   min-height: 100%;
 }
 body {
-  background-color: #aba9d3;
+  background-color: #FEEB45;
+  /*background-color: #FBF665;*/
   /*background-color: #caccce;*/
   
 }
@@ -32,12 +33,13 @@ header {
   display: flex; /* Display flebox a container that expands items to fill available free space or shrinks them to stop congestion*/
   justify-content: space-between;
   align-items: center;
-  background-color: black;
-  color: black;
+  background-color: #FEEB45;
+  /*background-color: #FBF665;
+  color: black;*/
   padding: 18px 70px;
-  border-style: solid;
+  /*border-style: solid;
   border-radius: 1px;
-  border-color: rgb(255, 0, 253);
+  /*border-color: rgb(255, 0, 253);*/
   animation: bordercolor 7s linear infinite;
 }
 
@@ -75,6 +77,7 @@ header nav li a {
   transition: all 0.3s ease 0s;
   color: rgb(0, 255, 253);
   font-family: "Orbitron", sans-serif;
+  font-weight: bold;
 }
 /*Delay of mouse hovering change to black*/
 header nav li a:hover {
@@ -181,7 +184,7 @@ header nav li a:hover {
 .modal-header {
   padding: 2px 16px;
   background-color: #3a4e93;
-  color: white;
+  color: black;
 }
 
 .modal-body {
@@ -189,15 +192,16 @@ header nav li a:hover {
   max-height: 800px;*/
   padding: 2px 16px;
   background-color: #3a4e93;
-  color: white;
+  color: black;
 }
 
 .modal-button {
   border: none;	
   outline: 0;
   padding: .67em .67em;
-  color: white;
-  background-color: #aba9d3;
+  color: black;
+  background-color: #FEEB45;
+  /*background-color: #FBF665;*/
   /*background-color: #fdf800;*/
   text-align: center;
   cursor: pointer;
@@ -209,7 +213,7 @@ header nav li a:hover {
   border-radius: .3em
 }
 .modal-button:hover {
-  background-color: palevioletred;
+  background-color: #DE004E;
 }
 
 /* for add to cart*/
@@ -222,8 +226,8 @@ header nav li a:hover {
 
 .btn-header {
   margin: .5em 15% 2em 15%;
-  color: white;
-  border: 2px solid #2D9CDB;
+  color: black;
+  border: 2px solid #05D9E8;
   background-color: rgba(255, 255, 255, .1);
   border-radius: 0;
   font-size: 1.5em;
@@ -249,9 +253,10 @@ header nav li a:hover {
 }
 
 .btn-primary {
-  color: white;
+  color: black;
   /*background-color: #56CCF2;*/
-  background-color: #aba9d3;
+  background-color: #FEEB45;
+  /*background-color: #FBF665;*/
   border: none;
   border-radius: .3em;
   font-size: 1.05em;
@@ -268,6 +273,7 @@ header nav li a:hover {
   margin: 10px;
   border-style: solid;
   border-color: black;
+  border-radius: .3em;
 }
 
 .shop-item-title {
@@ -276,7 +282,7 @@ header nav li a:hover {
   text-align: center;
   font-weight: bold;
   font-size: 1.25em;
-  color: white;
+  color: black;
   margin-bottom: 15px;
   padding: 20px;
   
@@ -305,7 +311,7 @@ header nav li a:hover {
   text-align: center;
   padding: 6px;
   font-size: 1.2em;
-  color: white;
+  color: black;
   /*background-color: gainsboro;*/
 
 }
