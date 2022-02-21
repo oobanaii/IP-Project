@@ -107,6 +107,14 @@ header nav li a:hover {
 }
 
 /*Glitch content*/
+
+.cyber-slider{
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
 p {
   line-height: 1.5;
 }
@@ -123,8 +131,8 @@ p {
   height: 10px;
   background-position: left;
   background-repeat: no-repeat;
-  display: block;
   margin-top: 0.5em;
+  display: block;
   width: 100%;
 }
 
@@ -141,6 +149,10 @@ p {
   align-items: center;
   min-height: 500px;
   padding: 30px 15px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .cyber-slider__wrapper {
@@ -329,15 +341,6 @@ p {
   opacity: 1;
   transform: translatex(-10%);
   background-size: contain;
-
-  /* content: "";
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.9);
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 999; */
 }
 
 @keyframes blink {
@@ -496,6 +499,287 @@ ul.about-content {
   }
 }
 
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+
+}
+.shard{
+  background-color: #000;
+
+}
+
+#imageHolder {
+  width: 200px;
+  height: 200px;
+  line-height: 50px;
+}
+#imageHolder img {
+  max-width: 50%;
+  max-height:50%;
+  display: inline-block; /* Instead of display: block; */
+  margin: 0 auto;
+  vertical-align: middle;
+}
+
+
+@media screen and (max-width: 600px;)
+{
+  body {
+      background-size: cover;
+  
+  }
+}
+
+
+
+
+
+
+
+
+#Gallery {
+	background:#000;
+
+
+}
+
+.container {
+			display: flex;
+			width: 100%;
+			background-color:#f9eb06;
+			flex-wrap: wrap;
+			/*wrap flex items to a new row if not enough space */
+
+		}
+
+		/* flex item of 20% per item */
+		.flex-item {
+			padding: 1%;
+			flex-grow: 1;
+			flex-basis: 20%;
+			/* 20% for borders*/
+
+			display: flex;
+			flex-direction: column;
+			/* so child elements can use flexbox stuff too! */
+			/* switching on borders will force the 5th flex item to move down*/
+			border: 10px solid #f9eb06;
+
+		}
+
+		.flex-img img {
+			max-width: 100%;
+		}
+
+		.flex-info {
+			margin-top: auto;
+		}
+
+		@media (max-width: 920px) {
+			.flex-item {
+				flex: 1 21%;
+        flex-grow:0;
+        flex-basis: 45%;
+ 
+			}
+      /* This is a flex shorthand */
+      /* we set 
+        flex-grow: 1; 
+        flex-basis: 21%;
+        Flex shorthand: https://developer.mozilla.org/en-US/docs/Web/CSS/flex
+        Understand flex grow: https://developer.mozilla.org/en-US/docs/Web/CSS/flex-grow
+      */
+		}
+    img{
+      width: 400px;
+    }
+    
+  .flex-img:hover{
+  opacity: .5;
+  transition:.9s;
+}
+
+.lpromo {
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden
+
+
+}
+.lpromo img {
+  border: 5px solid rgb(0, 255, 253);
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%
+
+}
+
+.btn {
+  padding: 15px 50px;
+  background-color:#000;
+  color: rgb(0, 255, 253);
+  padding: 25px 50px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-style: solid;
+  border-radius: 50px;
+  border-color: rgb(255, 0, 253);
+  font-size: larger;
+  font-style: bold;
+  
+}
+
+.buttons {
+  width: 960px;
+  margin: 0 auto;
+  position: relative;
+
+
+}
+  .action_btn {
+  width: 500px;
+  margin: 0 auto;
+}
+
+
+
+
+
+
+
+.Spinthewheel{
+	box-sizing:border-box;
+  background-color: #000;
+}
+
+.spin{
+	margin:0;
+	padding:0;
+	background-color: #000;
+	display:flex;
+	align-items:center;
+	justify-content: center;
+	height:100vh;
+	overflow:hidden;
+}
+
+.container{
+	width:500px;
+	height:500px;
+	background-color: #ccc;
+	border-radius:50%;
+	border:15px solid #dde;
+	position: relative;
+	overflow: hidden;
+	transition: 5s;
+}
+
+.container div{
+	height:50%;
+	width:200px;
+	position: absolute;
+	clip-path: polygon(100% 0 , 50% 100% , 0 0 );
+	transform:translateX(-50%);
+	transform-origin:bottom;
+	text-align:center;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	font-size:20px;
+	font-weight:bold;
+	font-family:sans-serif;
+	color:#fff;
+	left:135px;
+}
+
+.container .one{
+	background-color: #3f51b5;
+	left:50%;
+}
+.container .two{
+	background-color: #ff9800;
+	transform: rotate(45deg);
+}
+.container .three{
+	background-color: #e91e63;
+	transform:rotate(90deg);
+}
+.container .four{
+	background-color: #4caf50;
+	transform: rotate(135deg);
+}
+.container .five{
+	background-color: #009688;
+	transform: rotate(180deg);
+}
+.container .six{
+	background-color: #795548;
+	transform: rotate(225deg);
+}
+.container .seven{
+	background-color: #9c27b0;
+	transform: rotate(270deg);
+}
+.container .eight{
+	background-color: #f44336;
+	transform: rotate(315deg);
+}
+
+.arrow{
+
+	top:0;
+	left:50%;
+	transform: translateX(-50%);
+	color:#fff;
+}
+
+.arrow::before{
+	content:"\1F817";
+	font-size:50px;
+}
+
+#spin{
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:10;
+	background-color: #000;
+	text-transform: uppercase;
+	border:8px solid #fff;
+	font-weight:bold;
+	font-size:20px;
+	color:#a2a2a2;
+	width: 80px;
+	height:80px;
+	font-family: sans-serif;
+	border-radius:50%;
+	cursor: pointer;
+	outline:none;
+	letter-spacing: 1px;
+}
+
+
+
+
+.Voucher{
+
+background-color: #000;
+
+
+}
+
+
+
+
+
 footer {
   display: -webkit-flex;
   display: -moz-flex;
@@ -508,7 +792,7 @@ footer {
   color: #fff;
   background-color: #000;
   padding: 60px 0;
-  border-style: solid;
-  border-radius: 1px;
-  border-color: rgb(255, 0, 253);
+
+
 }
+ 
