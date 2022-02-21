@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Cyberpunk 2077 Slider</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;600&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,19 +19,19 @@
     <nav>
         <ul>
             <li>
-                <a href="index.html">Home</a>
+                <a href="#index.html">Home</a>
             </li>
             <li>
                 <a href="#cyberSlider">About</a>
             </li>
             <li>
-                <a href="Cart.html">Games</a>
+                <a href="#games.html">Games</a>
             </li>
             <li>
-                <a href="#Contact">Contact</a>
+                <a href="#contact.html">ContactUs</a>
             </li>
             <li>
-                <a href="Login.html">Login</a>
+                <a href="#Login.html">Login</a>
             </li>
             </ul>
     </nav>
@@ -40,13 +40,13 @@
 <body>
 
     <main>
-        <section class="home-section" id="Home">
+
         <div id="cyberSlider" class="cyber-slider">
             <ul class="cyber-slider__wrapper">
 
                 <li data-slideid="1" class="cyber-slider__slide active ">
                     <span class="cyber-slider__imgwrap">
-                        <img class="slide-image" src="slide-1.jpg" style = "opacity:1;" alt="Slide 1">
+                        <img class="slide-image" src="./img/slides/slide-1.jpg" style = "opacity:1;" alt="Slide 1">
                         <span class="glitch-area">
 
                         </span>
@@ -70,7 +70,7 @@
 
                 <li data-slideid="2" class="cyber-slider__slide ">
                     <span class="cyber-slider__imgwrap">
-                        <img class="slide-image" src="slide-2.jpg" alt="Slide 2">
+                        <img class="slide-image" src="./img/slides/slide-2.jpg" alt="Slide 2">
                         <span class="glitch-area">
 
                         </span>
@@ -79,9 +79,15 @@
                     <div class="cyber-slider__content">
                         <!-- class glitching -->
                         <div class="cyber-slider__slidetext">
-                            <h3 class="heading-lg">Games</h3>
-                            <p>Enter the massive open world of Night City, a place that sets new standards in terms of
-                                visuals, complexity and depth.</p>
+                            <h3 class="heading-lg">Join Our Discord!</h3>
+                            <p>Get the latest News from our  
+                                Discord Channel! Win Vouchers,
+                                Shards, Games or Prizes! 
+                                Hurry up! First 100 Users to join 
+                                our discord get 50 % off their
+                                first purchase of  any VR Game!
+                                https://discord.gg/GnZyR79a
+                                </p>
                         </div>
                     </div>
                 </li>
@@ -99,18 +105,43 @@
 
             </ul>
             <ul class="cyber-slider__controls">
-                <li data-slide="1" class="current"><a href="#" style="color: white">About<span class="sr-only">Slide 1</span></a></li>
-                <li data-slide="2"class="current2"><a href="#" style="color: white"  style="text-decoration: none;">Games<span class="sr-only">Slide 2</span></a></li>
+                <li data-slide="1" class="current"><a href="#" style="color: white"><span class="sr-only">Slide 1</span></a></li>
+                <li data-slide="2"class="current2"><a href="#" style="color: white"  style="text-decoration: none;"><span class="sr-only">Slide 2</span></a></li>
             </ul>
         </div>
-    </section>
 
-	<section class="about-area" id="about">
-        <div class="content"> <div class="text"><h3 class="section-title" data-text="TOP 10 BEST VR GAMES 2021">TOP 10 BEST VR GAMES 2021</h3></div></div>
-		<ul class="about-content">
-			<div class="about-left"><iframe width="560" height="315" src="https://www.youtube.com/embed/XE366PraX3I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-			<div class="about-right"><p>VR technology is advancing rapidly and it should be widely introduced to the public. Since we are currently living in the 21st century pandemic,with vr technology you can have the immersive experience for places that you are not able to visit. Here are the top 2021 VR GAMES!</p> </div>
-</ul>
+
+
+
+<section class="gallery-area" id="Gallery">
+
+    <h3 class="section-title">Up-Comming Virtual Reality Games !</h3>
+		<div class="flex-item">
+			<div class="flex-img"> 
+				<img src= "horizon.jpg" alt="">
+      </div>
+		</div>
+    <div class="flex-item">
+       <div class="flex-img">
+        <img src= "creed.jpg" alt="">
+		</div>
+    </div>
+    <div class="flex-item">
+       <div class="flex-img">
+        <img src= "undead.jpg" alt="">
+      </div>
+		</div>
+</section>
+
+<section class = "lpromo" id ="promo">
+    <img src="Archane.png" alt="landscape">
+    <div class="buttons">
+    <div class="action_btn">
+    <a class = "btn" href="#Login.html">Login</a>
+    <a class = "btn" href="#Signup.html">Signup</a>
+    </div>
+    </div>
+
 </section>
 
 <footer>
