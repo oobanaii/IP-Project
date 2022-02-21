@@ -144,6 +144,7 @@ function updateCartTotal() {
 function myFunction() {
     var inputVal = document.getElementById("input").value;
     var answerVal = document.getElementById("answer");
+    
     /* var percentage = (0.0015/100) * parseInt(inputVal,10) * 100;
     if(inputVal !== ''){
       answerVal.value = (Math.round( percentage * 100 ) / 100).toFixed(1)
@@ -156,8 +157,14 @@ function myFunction() {
     }else{
       answerVal.value = '';
     }
-
 }
+
+    
+
+
+    
+    
+
 
 
 
