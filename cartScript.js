@@ -1,3 +1,4 @@
+
 // Get the button that opens the modal
 var btn = document.querySelectorAll("button.modal-button");
 
@@ -138,6 +139,24 @@ function updateCartTotal() {
     }
     total = Math.round(total * 100) / 100
     document.getElementsByClassName('cart-total-price')[0].innerText = '$' + total
+}
+
+function myFunction() {
+    var inputVal = document.getElementById("input").value;
+    var answerVal = document.getElementById("answer");
+    /* var percentage = (0.0015/100) * parseInt(inputVal,10) * 100;
+    if(inputVal !== ''){
+      answerVal.value = (Math.round( percentage * 100 ) / 100).toFixed(1)
+    }else{
+      answerVal.value = '';
+    } */
+    var discountPrice = (0.01/100) * parseInt(inputVal, 10) * 100;
+    if(inputVal !== ''){
+      answerVal.value = (Math.round(discountPrice *100)/100).toFixed(2) 
+    }else{
+      answerVal.value = '';
+    }
+
 }
 
 

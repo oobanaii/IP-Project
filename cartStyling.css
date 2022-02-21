@@ -108,6 +108,9 @@ header nav li a:hover {
 
 .content-section {
   margin: 0.5em;
+  text-align: right;
+  font-weight: bold;
+  
 }
 
 
@@ -429,6 +432,18 @@ header nav li a:hover {
   height: auto;
 }
 
+
+/* for the shards and discounted price*/
+#input{
+  display: block;
+  float: right;
+}
+
+#answer{
+  display: block;
+  float: right;
+  
+}
 @media screen and (max-width: 576px) {
   .shop-item {
     width: 100%;
