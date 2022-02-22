@@ -61,6 +61,9 @@ function afterr(){
     .innerHTML="CHECKED IN";
 }
 
+
+
+
 // Redeem ticket & Coupon code change shard and image
 
 // redeem ticket
@@ -117,7 +120,7 @@ function after3(){
 
 // redeem $6 off coupon
 function before(){
-    document.getElementById('change4')
+    document.getElementById('change3')
     .src="c7.jpg";
     document.getElementById('message')
     .innerHTML="350 Shards";
