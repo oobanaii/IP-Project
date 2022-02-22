@@ -598,6 +598,7 @@ body {
 }
 
 .btn {
+  flex-shrink: 0;
   padding: 15px 50px;
   background-color:#B957CE;
   color: white;
@@ -613,6 +614,7 @@ body {
 }
 
 .buttons {
+  flex-shrink: 0;
   width: 960px;
   margin: 0 auto;
   position: relative;
@@ -620,6 +622,7 @@ body {
 
 }
   .action_btn {
+   flex-shrink: 0;  
   width: 500px;
   margin: 0 auto;
 }
