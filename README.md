@@ -5,7 +5,7 @@ VR is a simulated experience that can be similar to or completely different from
 This is a website that promotes virtual reality through the use of games and immersive technology. Users can purchase the latest VR entertainment and upcomming games that will be released on this platform.
 
 Users can login daily to claim shards, which can be used to get discounts off their purchased items. 
-Alternatively, they can participate in the "Spin the disc" event once a day to claim bonus shards. They can also refer this site to a friend and get 200 shards in return.
+Alternatively, they can refer this site to a friend and get 200 shards in return.
 
 * As a customer, I want to collect shards so I can purchase the virtual reality games at a discounted price.
 * As a customer, I want to find out more about the upcomming virtual reality games that are available.
