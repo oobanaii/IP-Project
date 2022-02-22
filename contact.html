@@ -20,19 +20,19 @@
     <nav>
         <ul>
             <li>
-                <a href="#index.html">Home</a>
+                <a href="index.html">Home</a>
             </li>
             <li>
                 <a href="#cyberSlider">About</a>
             </li>
             <li>
-                <a href="#games.html">GameShop</a>
+                <a href="Cart.html">GameShop</a>
             </li>
             <li>
-                <a href="#Contact">Contact</a>
+                <a href="Contact">Contact</a>
             </li>
             <li>
-                <a href="#Login.html">Login</a>
+                <a href="Login.html">Login</a>
             </li>
             </ul>
     </nav>
@@ -53,7 +53,7 @@
         Sat,Sun --Closed</p>   
 
 </section>
-
+<div id="my_form">
 <section class="contact-area" id="contact">
   <h3 class="section-title" style="color: rgb(255, 0, 253);">Contact us</h3>
   <form>
@@ -69,10 +69,24 @@
   <textarea id="comment" name="comment" rows="10" cols="100" required style="border: 5px solid rgb(0, 255, 253);">Type your message here :)
   </textarea>
   <br><br>
-  <button>Submit</button>
+  <button id = "open">Submit</button>
   <br><br>
   </form>
+</div>
+
+<div class = "modal-container" id = "modal_container">
+    <div class="modal">
+        <h1>Thank you for submiting your message we will be in touch within 3 days :)</h1>
+        <button id = "close" > Close me</button>
+
+    </div>
+
+</div>
+
 </section>
+
+
+
 
 
 <footer>
@@ -84,8 +98,59 @@
 
 </html>
 
+<script>
+    const open = document.getElementById('open');
+    const modal_container = document.getElementById('modal_container');
+    const close = document.getElementById('close');
+
+    open.oddEventListener('click', () => {
+        modal_container.classList.add('show');
+    });
+    close.oddEventListener('click', () => {
+        modal_container.classList.remove('show');
+    });
+
+</script>
 
 <style>
+
+
+.modal-container {
+    background-color: rgba(0,0,0,0.3);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    min-height:100vh;
+    margin:0;
+    display: none;
+    position: fixed;
+    opacity:0;
+    pointer-events: none;
+    top:0;
+    left:0;
+    height:100vh;
+    width:100vh;
+}
+
+.modal-container.show{
+
+    pointer-events: auto;
+    opacity:1;
+}
+
+.modal{
+    background-color:#fff;
+    border-radius:5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    padding:30px 50px;
+    width:600px;
+    max-width:100%;
+    text-align: center;
+}
+
+.modal h1{
+    margin:0;
+}
 
 section {
 	display: -webkit-flex;
@@ -265,3 +330,8 @@ button:hover{
 }
 
 </style>
+
+<script src="./js/scripts.js">
+
+
+</script>
