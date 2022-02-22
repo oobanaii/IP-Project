@@ -41,6 +41,7 @@ header {
   border-radius: 1px;
   /*border-color: rgb(255, 0, 253);*/
   animation: bordercolor 7s linear infinite;
+  border: 5px solid #F5C4FC;
 }
 
 header a {
@@ -53,7 +54,7 @@ header a {
 header h2 {
   list-style: none;
   text-transform: uppercase;
-  color: rgb(0, 255, 253);
+  color: white;
   font-size: 2rem;
   font-family: "Orbitron", sans-serif;
 }
@@ -81,7 +82,7 @@ header nav li a {
 }
 /*Delay of mouse hovering change to black*/
 header nav li a:hover {
-  color: purple;
+  color: #B957CE;
 }
 
 /*Media size change for larger devices for the header*/
@@ -548,3 +549,17 @@ header nav li a:hover {
   
 }
   
+footer {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  background-color: #5C58B6;
+  padding: 60px 0;
+
+}
