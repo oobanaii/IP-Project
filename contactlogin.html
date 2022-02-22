@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap" rel="stylesheet">
+  
+</head>
+
+<header>
+    <h2 class="text" data-text="Archane Games"><a href="#Home" ></a>Archane Games</h2>
+    <nav>
+        <ul>
+            <li>
+                <a href="indexlogin.html">Home</a>
+            </li>
+            <li>
+                <a href="#cyberSlider">About</a>
+            </li>
+            <li>
+                <a href="Cart.html">GameShop</a>
+            </li>
+            <li>
+                <a href="contactlogin.html">Contact</a>
+            </li>
+            <li>
+                <a href="index.html">LogOut</a>
+            </li>
+            </ul>
+    </nav>
+
+</header>
+
+  
+<section class="contact-section" id="contacts">
+    <div class="contact-img"></div>
+    <h1 id="Title">CALL US</h1>
+    <p>(65 + 6210690)
+     (65 + 6210790) </p>
+     <h1 id="Title">Location</h1>
+     <p>321 Arch Street 21, Avenue,
+        Singapore , S(639 620)</p>
+     <h1 id="Title">Buisness Hours</h1>
+     <p>Mon- Fri 10 am-8pm
+        Sat,Sun --Closed</p>   
+
+</section>
+
+<section class="contact-area" id="contact">
+  <h3 class="section-title" style="color: rgb(255, 0, 253);">Contact us</h3>
+  <form>
+  <label for="name">Name:</label>
+  <input type="text" placeholder = "Type your Name" id="name" required>
+
+  <label for="email">Email:</label>
+  <input type="text" placeholder = "Type your Email" id="name" required>
+  <br>
+  <p1>Please type your message below :</p1>
+  <br>
+  <br>
+  <textarea id="comment" name="comment" rows="10" cols="100" required style="border: 5px solid rgb(0, 255, 253);">Type your message here :)
+  </textarea>
+  <br><br>
+  <button>Submit</button>
+  <br><br>
+  </form>
+</section>
+
+
+<footer>
+	<p>All Right Reserved by Josephine & Angela Wong</p>
+	</footer>
+    </main>
+    <script src="./js/scripts.js"></script>
+</body>
+
+</html>
+
+
+<style>
+
+section {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 110px 100px;
+}
+
+/*Resize section layout */
+@media (max-width:1000px) {
+	section {
+		padding: 100px 50px;
+	}
+}
+@media (max-width:600px) {
+	section {
+		padding: 125px 30px;
+	}
+}
+
+
+/*Section paragraph layout*/
+section p {
+	max-width: 800px;
+	text-align: center;
+	margin-bottom: 35px;
+	padding: 0 20px;
+	line-height: 2;
+}
+
+/*Home page flex containers layout*/
+.contact-section {
+  justify-content: center;
+	position: relative;
+	min-height: 100vh;
+	text-align: center;
+  color: #fff;
+
+}
+
+/*Home page flex containers layout for image*/
+.contact-section .contact-img {
+	background-image: url(Background.jpg);
+	position: absolute; /*postion to left below header*/
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+  /*Home page image crop to fit the page for small devices*/
+	-webkit-background-size: cover;
+	background-size: cover;
+  /*Overflow just to prevent scroll bars from showing only nescessary*/
+  overflow: hidden;
+  /*image put behind the heading*/
+  z-index: -1;
+}
+
+.contact-section .contact-img:after {
+	content: '';   /*Empty layer*/
+	position: absolute;   /*Same postion as the image*/
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+  /*color opacity: just to dim*/
+	background-color: #000;  
+	opacity: .6;
+}
+
+  /*title homepage*/
+.contact-section h1 {
+  position: relative;
+	margin-bottom: 15px;   /* title position: */
+	font-size: 100px;
+	font-family: merienda;
+  z-index: 1;
+}
+
+
+
+
+
+
+
+/* content resize for smaller devices */
+@media (max-width:800px) {
+	.contact-section {
+		min-height: 600px;
+	}
+	.contact-section h1 {
+		font-size: 32px;
+	}
+	.contact-section h3 {
+		font-size: 20px;
+	}
+	.contact-section a.banner-btn {
+		padding: 15px 40px;
+	}
+}
+
+
+/* content resize for smaller devices */
+@media (max-width:800px) {
+	#contacts {
+		min-height: 600px;
+}
+
+}
+
+
+/*Contact Section layout design for devices */
+@media (max-width: 1000px) {
+	.contact-content li {
+	flex-basis: 100%;
+    text-align: center;
+    margin-bottom: 65px;
+	}
+	.contact-content li:last-child {
+		margin-bottom: 0;
+	}
+	.contact-content li p {
+		padding: 0;
+	}
+}
+
+#contact {
+  background:#000;
+  text-align: center;
+  color:rgb(255, 0, 253);
+  font-family: merienda;
+    border: 5px solid rgb(0, 255, 253);
+}
+
+
+.h3{
+    color:rgb(255, 0, 253)
+}
+
+
+/*contact us section submit Button design  */
+button{
+	padding: 15px 50px;
+	background:#000;
+	border-radius: 50px;
+    border: 5px solid rgb(0, 255, 253);
+    border-style: bold;
+	text-transform: uppercase;
+    font-weight: bold;
+	color:rgb(0, 255, 253);
+    font-family: merienda;
+    overflow: hidden;
+
+}
+
+label{
+  font-size: 25px;
+  font-weight: bold;
+  color:rgb(255, 0, 253);
+  font-family: merienda;
+  
+}
+
+input{
+  	border-radius: 50px;
+    padding: 15px 35px;
+    border: 5px solid rgb(0, 255, 253);
+}
+
+
+button:hover{
+  opacity: .5;
+  transition:.9s;
+}
+
+</style>
