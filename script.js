@@ -41,3 +41,99 @@ for (const bullet of allBullets) {
 
     })
 }
+
+// Check in button change
+function before(){
+    document.getElementById('shards-img')
+    .src="Shardstoday.jpg";
+    document.getElementById('message')
+    .innerHTML="500 Shards";
+    document.getElementById('btni')
+    .innerHTML="CHECK IN";
+}
+// After Check in button change
+function afterr(){
+    document.getElementById('shards-img')
+    .src="Shardsdone.jpg";
+    document.getElementById('message')
+    .innerHTML="501 Shards";
+    document.getElementById('btni')
+    .innerHTML="CHECKED IN";
+}
+
+// Redeem ticket & Coupon code change shard and image
+
+// redeem ticket
+function before(){
+    document.getElementById('change1')
+    .src="Ticket.jpg";
+    document.getElementById('message')
+    .innerHTML="501 Shards";
+
+}
+function after1(){
+    document.getElementById('change1')
+    .src="T1R.jpg";
+    document.getElementById('message')
+    .innerHTML="500 Shards";
+
+}
+
+
+// redeem 10%off coupon
+function before(){
+    document.getElementById('change2')
+    .src="ca5.jpg";
+    document.getElementById('message')
+    .innerHTML="501 Shards";
+
+}
+function after2(){
+    document.getElementById('change2')
+    .src="C1R.jpg";
+    document.getElementById('message')
+    .innerHTML="450 Shards";
+
+}
+
+
+// redeem 25%off coupon
+function before(){
+    document.getElementById('change3')
+    .src="ca2.jpg";
+    document.getElementById('message')
+    .innerHTML="450 Shards";
+
+}
+function after3(){
+    document.getElementById('change3')
+    .src="C3R.jpg";
+    document.getElementById('message')
+    .innerHTML="350 Shards";
+
+}
+
+
+
+// redeem $6 off coupon
+function before(){
+    document.getElementById('change3')
+    .src="c7.jpg";
+    document.getElementById('message')
+    .innerHTML="350 Shards";
+
+}
+function after4(){
+    document.getElementById('change4')
+    .src="C4R.jpg";
+    document.getElementById('message')
+    .innerHTML="200 Shards";
+
+}
+
+
+
+
+
+
+
