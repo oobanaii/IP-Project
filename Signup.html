@@ -8,20 +8,30 @@
     <title>Signup page</title>
 
 <body>
+
+<div class="container">
+<div class="form" id="add-contact">
 <section class="Signup-section" id="Signup">
     <div class="Signup-img"></div>
   <div class="SignupBox"> <img class="user" src="Logo.png" height="100px" width="100px">
     <h3>SIGN UP</h3>
-    <form action="Signup.php" method="post">
-    <div class="inputBox"> <input id="uname" type="text" name="Username" placeholder="Username"> 
-    <input id="email" type="Email" name="Email" placeholder="Email"> 
-    <input id="pass" type="password" name="Password" placeholder="Password"> 
-    <input id="pass" type="password" name="Re-enter-Password" placeholder="Re-Enter Password"> 
-    </div> <input type="submit" name="" value="Submit">
-    </form> 
 
+    <form>
+    <div class="inputBox"> 
+    <input id="contact-Firstname" type="text" name="firstname" placeholder="firstname" >     
+    <input id="contact-Lastname" type="text" name="lastname" placeholder="lastname">     
+    <input id="uname" type="text" name="Username" placeholder="Username"> 
+    <input id="contact-email" type="Email" name="Email" placeholder="Email"> 
+    <input id="pass" type="password" name="Password" placeholder="Password"> 
+    </div> <input type="submit" name="" value="Submit" class="btn btn-primary"  id="contact-submit"  href = "Login.html">
+    </form> 
 </div>
 </section>
+</div>
+</div>
+
+
+</body>
 
 
 <style>
@@ -194,3 +204,8 @@ h3 {
 </body>
 
 </html>
+
+<script src="Database.js">
+
+
+</script>
