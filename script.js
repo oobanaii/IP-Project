@@ -76,7 +76,7 @@ function before(){
 }
 function after1(){
     document.getElementById('change1')
-    .src="T1R.jpg";
+    .src="T1R.JPG";
     document.getElementById('message')
     .innerHTML="500 Shards";
 
@@ -93,7 +93,7 @@ function before(){
 }
 function after2(){
     document.getElementById('change2')
-    .src="C1R.jpg";
+    .src="C1R.JPG";
     document.getElementById('message')
     .innerHTML="450 Shards";
 
@@ -110,7 +110,7 @@ function before(){
 }
 function after3(){
     document.getElementById('change3')
-    .src="C3R.jpg";
+    .src="C3R.JPG";
     document.getElementById('message')
     .innerHTML="350 Shards";
 
@@ -121,14 +121,14 @@ function after3(){
 // redeem $6 off coupon
 function before(){
     document.getElementById('change3')
-    .src="c7.jpg";
+    .src="c7.JPG";
     document.getElementById('message')
     .innerHTML="350 Shards";
 
 }
 function after4(){
     document.getElementById('change4')
-    .src="C4R.jpg";
+    .src="C4R.JPG";
     document.getElementById('message')
     .innerHTML="200 Shards";
 
