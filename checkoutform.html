@@ -61,79 +61,32 @@
                       <input type="text" id="cvv" name="cvv" placeholder="923" required>
                     </div>
                   </div>
-                  <label for="shards">Shards Used</label>
-                  <input type="text" id="shards" name="shardsUsed" placeholder="389">
+                  <label for="shards">Promo Code</label>
+                  <input type="text" id="promo" name="promocode" placeholder="#H2156">
                 </div>                
               </div>
               <label>
                 <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
               </label>
-              <!--input type="submit" value="Checkout" class="btn"-->
-              <button id="checkoutBtn" class="btn">Checkout</button>
-              <div id="checkoutModal" class="modal">
+              <button id="myBtn">Proceed with Checkout</button>
+              <div id="myModal" class="modal">
                 <div class="modal-content">
                   <span class="close">x</span>
-                  <p>Thank you for shopping with us. Share our website to earn additional shards!</p>
+                  <p>Transaction Complete!</p>
+                  <p> Thank you for shoppping with us. Share our website to earn additional shards!</p>
                   <input type="text" value="https://oobanaii.github.io/IP-Project/" id="webLink">
                   <button class="btn" onclick="shareFunc()">Copy Link</button> 
+                  <button class="btn" onclick="window.location.href='https://oobanaii.github.io/IP-Project/Cart.html';" value="Home" type="button">Return to Games Page</button>
                 </div>
               </div>
+            
+              
+
                
             </form>
           </div>
         </div>
-    </div>
-    <script>
-      // Get the modal
-      var modal = document.getElementById("checkoutModal");
-
-      // Get the button that opens the modal
-      var btn = document.getElementById("checkoutBtn");
-
-      // Get the <span> element that closes the modal
-      var span = document.getElementsByClassName("close")[0];
-
-      // When the user clicks the button, open the modal 
-      btn.onclick = function() {
-        modal.style.display = "block";
-      }
-
-      // When the user clicks on <span> (x), close the modal
-      span.onclick = function() {
-        modal.style.display = "none";
-      }
-
-      // When the user clicks anywhere outside of the modal, close it
-      window.onclick = function(event) {
-        if (event.target == modal) {
-          modal.style.display = "none";
-        }
-      }
-      function shareFunc() {
-        /* Get the text field */
-        var copyText = document.getElementById("webLink");
-      
-        /* Select the text field */
-        copyText.select();
-        copyText.setSelectionRange(0, 99999); /* For mobile devices */
-      
-        /* Copy the text inside the text field */
-        navigator.clipboard.writeText(copyText.value);
-        
-        /* Alert the copied text */
-        alert("Copied the text: " + copyText.value);
-      }
-      function myFunction() {
-        var inputVal = document.getElementById("input").value;
-        var answerVal = document.getElementById("answer");
-        var percentage = (0.0015/100) * parseInt(inputVal,10) * 100;
-        if(inputVal !== ''){
-          answerVal.value = (Math.round( percentage * 100 ) / 100).toFixed(1)
-        }else{
-          answerVal.value = '';
-        }
-      }
-      
-    </script>    
+    </div> 
+    <script src="checkoutScript.js" ></script>
   </body>
 </html>
