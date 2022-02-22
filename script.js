@@ -117,7 +117,7 @@ function after3(){
 
 // redeem $6 off coupon
 function before(){
-    document.getElementById('change3')
+    document.getElementById('change4')
     .src="c7.jpg";
     document.getElementById('message')
     .innerHTML="350 Shards";
