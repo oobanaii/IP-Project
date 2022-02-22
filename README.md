@@ -25,7 +25,7 @@ https://xd.adobe.com/view/7dbc17b8-050c-4bc0-9795-7ceaf0ac1e81-28ef/
 - Contact Page 
 ### Features Left to Implement
 - log in page and user profile (done)
-- sign up page
+- sign up page (done)
 - API implementation (done)
 
 ## Technologies Used
@@ -50,7 +50,25 @@ https://xd.adobe.com/view/7dbc17b8-050c-4bc0-9795-7ceaf0ac1e81-28ef/
 1. Go to the "Games" page
 2. Verify that when the cart is empty, no price is displayed
 3. Try to add games to cart and verify that the price changes according to quantity
-4. Verify that you can apply the number of shards to use as well as the promo code.  
+4. Verify that you can apply the number of shards to use as well as the promo code.
+
+#### Voucher:
+1. Click on voucher to redeem
+2. check if shards are deducted from the home page 
+3. Verify if shards are minus correctly
+4. Verify once select on redeem , redeem code apear on home page 
+
+#### Shard daily login :
+1. Click on shard check in see if button works
+2.  Ensure that the correct amount is added to the total number of shards
+3.  Verify that the shard picture have change to done instead of today.
+4.  Overall check the shard is the correct amount added 
+
+#### implement mp4 video
+1. tested out to download git hub did not work 
+2. Delete mp4 video change and upload to youtube to embed in git hub 
+3. Upload in git hub check if vieo run smoothly
+
 
 ## Credits
 ### Content
@@ -63,16 +81,24 @@ https://xd.adobe.com/view/7dbc17b8-050c-4bc0-9795-7ceaf0ac1e81-28ef/
   * For Lone Echo's description, it was taken from: https://www.oculus.com/experiences/rift/1368187813209608/
 * For the pricing of the games, they were takn from: https://store.steampowered.com/ and https://www.playstation.com/en-sg/games/ 
 * For the device compatibility, they were obtained from: https://www.cnet.com/pictures/best-vr-games/2/
+* Cyber punk border button design / border put it in contact page https://www.neondystopia.com/cyberpunk-books-fiction/greek-punk-a-review-of-a-cyberblade-city-of-five-skies/
+* Header  reference to change format https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal
+
+
 
 ### Media
 The photos used in this site were obtained from:
 * For game title pictures, they were obtained from: https://www.roadtovr.com/ , https://store.steampowered.com/ and https://store.playstation.com/ 
  * For Catan VR, Adobe Photoshop was used to remove the playstation logo
  * For Lone Echo, Lone Echo 2's picture was used instead
-* For upcoming games, they were obtained from: 
-* For the background pictures, they were obtained from: 
+* For upcoming games, they were obtained from: google
+* For the background pictures, they were obtained from: google Plus enhance photoshop by josephine 
+* Logo obtain from : Build from scratch using adobe illustrator done by angela
 
 ### Acknowledgements
 We received inspiration for this project from:
 * Website : https://www.cyberpunk.net/sg/en/
 * Glitch Effect : https://www.youtube.com/watch?v=7Xyg8Ja7dyY
+
+### Deployment link
+* https://oobanaii.github.io/IP-Project/
