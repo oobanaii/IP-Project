@@ -1,5 +1,5 @@
 #  Archane Games
-VR technology is advancing rapidly and it should be widely introduced to the public. Since we are currently living in the 21st century pandemic,with vr technology you can have the immersive experience for places that you are not able to visit. This platform provides a variety of games catered for different users base on their own likings. 
+VR is a simulated experience that can be similar to or completely different from the real world. Applications of virtual reality include entertainment, education and business. Archane Games is a website that is specially catered for users who enjoy VR games. The rapid advancement of VR technology has drastically improved the gameplay and game experience, enabling players to fully immerse themselves in the virtual world. A wide range of games are available, catering to all types of players. Shop with us to get special deals.
 
 ## Design Process
 This is a website that promotes virtual reality through the use of games and immersive technology. Users can purchase the latest VR entertainment and upcomming games that will be released on this platform.
@@ -14,20 +14,19 @@ Alternatively, they can participate in the "Spin the disc" event once a day to c
 * As a site owner, I want to sell as many virtual reality games as possible.  
 
 Link to Adobe XD Wireframe:
-*note that wireframe is still in progress as of 24/1/2022
 https://xd.adobe.com/view/7dbc17b8-050c-4bc0-9795-7ceaf0ac1e81-28ef/
-
 
 
 ## Features
 ### Existing Features
-- Browse through the available VR games (Search Bar/filter)
-- Add games to shopping cart and then checkout (Check out page). 
-- Rewards & discounted page 
+- Claim daily login shards
+- Browse through the games available and view the details and trailer 
+- Add games to shopping cart and then checkout (Check out page)
 - Contact Page 
-- Create an account & Login Page
 ### Features Left to Implement
-- log in page and user profile
+- log in page and user profile (done)
+- sign up page
+- API implementation (done)
 
 ## Technologies Used
 * HTML
@@ -48,10 +47,10 @@ https://xd.adobe.com/view/7dbc17b8-050c-4bc0-9795-7ceaf0ac1e81-28ef/
 3. Try to submit the form with an invalid email address and verify that a relevant error message appears
 4. Try to submit the form with all inputs valid and verify that a success message appears
 #### Checkout page:
-1. Go to the "Cart" page
-2. Try to submit an empty cart and verify that an error message about the required fields appears
-3. Try to submit the checkout informtion with invalid email address, credit card character count and verify that a relevant error message appears
-4. Try to submit the form with all inputs valid and verify that a scucess message appears.
+1. Go to the "Games" page
+2. Verify that when the cart is empty, no price is displayed
+3. Try to add games to cart and verify that the price changes according to quantity
+4. Verify that you can apply the number of shards to use as well as the promo code.  
 
 ## Credits
 ### Content
@@ -67,8 +66,11 @@ https://xd.adobe.com/view/7dbc17b8-050c-4bc0-9795-7ceaf0ac1e81-28ef/
 
 ### Media
 The photos used in this site were obtained from:
-* For Lone Echo: https://tech.fb.com/wp-content/uploads/2021/09/lone-echo-featured-image.jpg
-* And for all other games included in this website: https://www.cnet.com/pictures/best-vr-games/2/  
+* For game title pictures, they were obtained from: https://www.roadtovr.com/ , https://store.steampowered.com/ and https://store.playstation.com/ 
+ * For Catan VR, Adobe Photoshop was used to remove the playstation logo
+ * For Lone Echo, Lone Echo 2's picture was used instead
+* For upcoming games, they were obtained from: 
+* For the background pictures, they were obtained from: 
 
 ### Acknowledgements
 We received inspiration for this project from:
